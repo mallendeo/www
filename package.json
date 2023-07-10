@@ -11,12 +11,16 @@
   },
   "dependencies": {
     "@astrojs/solid-js": "^2.2.0",
+    "@solid-primitives/intersection-observer": "^2.1.2",
     "astro": "^2.8.0",
     "clsx": "^1.2.1",
     "solid-icons": "^1.0.11",
     "solid-js": "^1.4.3"
   },
   "devDependencies": {
+    "@unocss/preset-mini": "^0.53.4",
+    "@unocss/preset-typography": "^0.53.4",
+    "@unocss/preset-wind": "^0.53.5",
     "@unocss/reset": "^0.53.4",
     "eslint": "^8.44.0",
     "rome": "12.1.3",
