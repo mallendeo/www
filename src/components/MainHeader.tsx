@@ -12,12 +12,13 @@ const ListItem: ParentComponent<{
 	hideIndicator?: boolean
 	indicatorClass?: string
 }> = (props) => {
-	const { currentPath, href, active, hideIndicator } = props
+	const pathStr = props.currentPath?.split(/\//).join(' ').trim()
+	const hrefStr = props.href.split(/\//).join(' ').trim()
 	return (
 		<li
 			class={clsx(
 				'px-2 py-1 flex flex-col',
-				active || currentPath === href ? 'text-rose' : undefined,
+				props.active || pathStr === hrefStr ? 'text-rose' : undefined,
 				props.class,
 			)}
 		>
@@ -27,35 +28,38 @@ const ListItem: ParentComponent<{
 			>
 				{props.children ?? props.text}
 			</a>
-			{!hideIndicator && (active || currentPath === href) && (
+			{!props.hideIndicator && (props.active || pathStr === hrefStr) && (
 				<hr class={clsx('h-1 w-5 bg-rose', props.indicatorClass)} />
 			)}
 		</li>
 	)
 }
 
-const MainHeader: Component<{ currentPath?: string }> = ({ currentPath }) => (
+const MainHeader: Component<{ currentPath?: string }> = (props) => (
 	<header class='max-w-4xl w-full mx-auto flex flex-col mt-4'>
 		<nav>
 			<ul class={clsx('px-2 gap-3', 'flex', 'font-bold pr-4 items-start')}>
-				<ListItem currentPath={currentPath} href='/'>
+				<ListItem currentPath={props.currentPath} href='/'>
 					Portfolio
 				</ListItem>
-				<ListItem currentPath={currentPath} href='/work'>
+				<ListItem currentPath={props.currentPath} href='/work'>
 					Work
 				</ListItem>
 
 				<li class='flex-1' />
 
-				<ListItem currentPath={currentPath} href='mailto:hi@mallendeo.com'>
+				<ListItem
+					currentPath={props.currentPath}
+					href='mailto:hi@mallendeo.com'
+				>
 					<FiMail
 						class={clsx(
-							currentPath === '/contact' ? 'text-rose' : 'text-black',
+							props.currentPath === '/contact' ? 'text-rose' : 'text-black',
 						)}
 						size={24}
 					/>
 				</ListItem>
-				<ListItem currentPath={currentPath} href='/cv'>
+				<ListItem currentPath={props.currentPath} href='/cv'>
 					<FiFile size={20} />
 					CV
 				</ListItem>
