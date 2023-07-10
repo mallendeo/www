@@ -22,6 +22,7 @@ const VideoLink: Component<{
 				class={clsx('w-full h-full', props.videoClass)}
 				muted
 				autoplay
+				playsinline
 				src={props.src}
 			/>
 		</a>

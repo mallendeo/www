@@ -97,6 +97,7 @@ const Showcase: Component<{ class?: string }> = (props) => (
 										videoRef = el
 									}}
 									muted
+									playsinline
 									src={item.video}
 								/>
 							)
