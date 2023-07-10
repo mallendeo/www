@@ -1,0 +1,18 @@
+---
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <article
+      class="px-4 max-w-4xl w-full mx-auto text-base prose prose-truegray"
+    >
+      <slot />
+    </article>
+  </body>
+</html>

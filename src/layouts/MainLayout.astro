@@ -1,0 +1,27 @@
+---
+const { title } = Astro.props;
+import { clsx } from "clsx";
+import MainHeader from "../components/MainHeader";
+const currentPath = Astro.url.pathname;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <MainHeader {currentPath} />
+
+    <div class="px-4 max-w-4xl w-full mx-auto flex flex-col">
+      <slot />
+    </div>
+
+    <div class="h-0 my-10 mx-auto w-1/4 border-b-gray-200 border-b"></div>
+
+    <footer class="h-32 grid place-content-center">
+      mallendeo.com - {new Date().getFullYear()}
+    </footer>
+  </body>
+</html>

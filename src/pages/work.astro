@@ -1,0 +1,325 @@
+---
+import VideoLink from "../components/VideoLink";
+import MainLayout from "../layouts/MainLayout.astro";
+import {
+  BiLogosReact,
+  BiLogosNodejs,
+  BiLogosAngular,
+  BiLogosRedux,
+  BiLogosPhp,
+  BiLogosJquery,
+  BiLogosHtml5,
+} from "solid-icons/bi";
+---
+
+<MainLayout title="Mauricio Allende - Front-end Engineer">
+  <article class="max-w-xl mx-auto">
+    <section class="prose">
+      <div class="text-center flex flex-col gap-2">
+        <h2 class="mb-0 mt-4">Globant</h2>
+        <a
+          target="__blank"
+          rel="noopener noreferrer"
+          href="https://www.globant.com/"
+        >
+          globant.com
+        </a>
+        <a
+          class="mt-0"
+          target="__blank"
+          rel="noopener noreferrer"
+          href="https://latamairlines.com"
+        >
+          LATAM XP
+        </a>
+        <strong class="mt-2 text-gray-5">2019 - 2020</strong>
+      </div>
+
+      <div class="flex justify-center mt-12">
+        <VideoLink
+          class="max-w-32 h-20 w-full"
+          src="/videos/codepen/latam.mp4"
+          url="https://codepen.io/mallendeo/pen/ExVPLjB"
+        />
+      </div>
+
+      <p class="mt-12">
+        In 2020, I worked at Globant with the LATAM Ancillaries Team to redesign
+        and create the user interface for seat selection and baggage services.
+      </p>
+      <p>
+        We used <strong>Next.JS</strong> and <strong>Node</strong> on Google Cloud
+        Platform (GCP). We worked using a monorepo (Lerna) where we shared UI components
+        with other teams.
+      </p>
+
+      <div class="flex gap-4 mt-10">
+        <BiLogosReact
+          title="React / Next.JS"
+          fill="currentColor"
+          class="text-cyan"
+          size={24}
+        />
+
+        <BiLogosNodejs
+          title="Node.JS"
+          fill="currentColor"
+          class="text-emerald"
+          size={24}
+        />
+      </div>
+    </section>
+
+    <hr class="my-10" />
+
+    <section class="prose">
+      <div class="text-center flex flex-col gap-2">
+        <h2 class="mb-0 mt-4">AcidLabs</h2>
+        <a
+          target="__blank"
+          rel="noopener noreferrer"
+          href="https://acidlabs.com/"
+        >
+          acidlabs.com
+        </a>
+        <strong class="mt-2 text-gray-5">2019</strong>
+      </div>
+
+      <div class="flex justify-center mt-4">
+        <VideoLink
+          class="max-w-48 h-42 w-full"
+          src="/videos/codepen/abcdin.mp4"
+          url="https://codepen.io/mallendeo/pen/EMBjvg"
+        />
+      </div>
+
+      <p class="mt-0">
+        I worked on the Abcdin e-commerce platform, where I fixed bugs, improved
+        performance, and added new features.
+      </p>
+      <p>
+        I also improved their React Native app performance on the map
+        navigation, and the server response time for the in-store Kiosks by more
+        than 80%.
+      </p>
+
+      <div class="flex gap-4 mt-10">
+        <BiLogosReact
+          title="React / React Native"
+          fill="currentColor"
+          class="text-cyan"
+          size={24}
+        />
+        <BiLogosRedux
+          title="Redux"
+          fill="currentColor"
+          class="text-indigo"
+          size={24}
+        />
+
+        <BiLogosNodejs
+          title="Node.JS"
+          fill="currentColor"
+          class="text-emerald"
+          size={24}
+        />
+      </div>
+    </section>
+
+    <hr class="my-10" />
+
+    <section class="prose">
+      <div class="flex justify-center mix-blend-multiply">
+        <VideoLink
+          class="max-w-32 h-32 w-full"
+          src="/videos/codepen/reign.mp4"
+          url="https://codepen.io/mallendeo/pen/NyJqRv"
+        />
+      </div>
+
+      <div class="text-center flex flex-col gap-2">
+        <h2 class="mb-0 mt-4">Reign Design</h2>
+        <span>Now ApplyDigital</span>
+        <a
+          rel="noopener noreferrer"
+          target="__blank"
+          href="https://www.applydigital.com/reign/en/"
+        >
+          applydigital.com
+        </a>
+        <strong class="mt-4 text-gray-5">2018</strong>
+      </div>
+
+      <div class="flex justify-center mt-16">
+        <VideoLink
+          class="max-w-48 w-full"
+          src="/videos/codepen/falabella.mp4"
+          url="https://codepen.io/mallendeo/pen/EQoage"
+        />
+      </div>
+
+      <p class="mt-8">
+        I developed the user interface for an insurance web app for Seguros
+        Falabella.
+      </p>
+      <p>
+        In addition, I created a proof of concept for an interactive payment
+        user interface for Copec, utilizing Falabella Pay.
+      </p>
+
+      <div class="flex gap-4 mt-10">
+        <BiLogosAngular
+          title="Angular 4+"
+          fill="currentColor"
+          class="text-red"
+          size={24}
+        />
+
+        <BiLogosNodejs
+          title="Node.JS"
+          fill="currentColor"
+          class="text-emerald"
+          size={24}
+        />
+      </div>
+    </section>
+
+    <hr class="my-10" />
+
+    <section class="prose">
+      <div class="text-center flex flex-col gap-2">
+        <h2 class="mb-0 mt-4">Pleno</h2>
+        <span>Santillana</span>
+        <a
+          target="__blank"
+          rel="noopener noreferrer"
+          href="https://www.pleno.digital/"
+        >
+          pleno.digital
+        </a>
+        <strong class="mt-4 text-gray-5">2017</strong>
+      </div>
+
+      <div class="my-16"></div>
+
+      <p>
+        I created a multi-platform app that allows students in rural areas to
+        take offline tests that can later be uploaded to the Santillana platform
+        Pleno for evaluation.
+      </p>
+
+      <p>
+        The app includes a real-time admin dashboard that makes it easy for the
+        professor to pause or finish the test for any or all students. A video
+        of the app flow is available at <a
+          rel="noopener noreferrer"
+          target="__blank"
+          href="https://youtu.be/nP8HFSCk7KI"
+        >
+          youtu.be/nP8HFSCk7KI
+        </a>.
+      </p>
+
+      <div class="flex gap-4 mt-10">
+        <BiLogosAngular
+          title="Angular 4"
+          fill="currentColor"
+          class="text-red"
+          size={24}
+        />
+
+        <BiLogosNodejs
+          title="Node.JS"
+          fill="currentColor"
+          class="text-emerald"
+          size={24}
+        />
+      </div>
+    </section>
+
+    <hr class="my-10" />
+
+    <section class="prose">
+      <div class="text-center flex flex-col gap-2">
+        <h2 class="mb-0 mt-4">Frankenstudio</h2>
+        <span>Freelance</span>
+        <a
+          target="__blank"
+          rel="noopener noreferrer"
+          href="https://www.facebook.com/FRKS2"
+        >
+          frankenstudio
+        </a>
+        <strong class="mt-4 text-gray-5">2014 - 2015</strong>
+      </div>
+
+      <div class="my-16"></div>
+
+      <p>
+        I created
+        <a
+          rel="noopener noreferrer"
+          target="__blank"
+          href="https://www.facebook.com/FRKS2/videos/obus-open-building-system/673147469452507/"
+        >
+          OBUS (Open Building System)</a
+        >, a platform that displays useful information on various screens around
+        the <em>Casa Central</em> campus of the <em
+          >Pontificia Universidad Católica de Chile.</em
+        >
+      </p>
+
+      <p>
+        This system includes an admin panel where publishers can upload media
+        and create posts relevant to the campus and univeristy. These apps are
+        interactive, touch-friendly, and can be easily deployed on a new screen
+        and configured via the admin panel.
+      </p>
+
+      <p>
+        In 2015, I developed a video recording app with a green screen effect
+        from scratch for
+        <em>Minera Los Pelambres</em>. With this app, you can send a video
+        postcard to yourself or anyone via email. The app runs on NW.js (Node
+        Webkit) and was coded without a framework.
+      </p>
+
+      <div class="flex gap-4 mt-10">
+        <BiLogosPhp
+          title="CakePHP"
+          fill="currentColor"
+          class="text-red"
+          size={24}
+        />
+
+        <BiLogosNodejs
+          title="Node.JS / Node Webkit"
+          fill="currentColor"
+          class="text-emerald"
+          size={24}
+        />
+
+        <BiLogosHtml5
+          title="HTML5"
+          fill="currentColor"
+          class="text-orange"
+          size={24}
+        />
+
+        <BiLogosJquery
+          title="jQuery"
+          fill="currentColor"
+          class="text-emerald"
+          size={24}
+        />
+      </div>
+    </section>
+
+    <section class="prose bg-gray-1 p-4 rounded-lg mt-8">
+      P.S. All the animations on this page were made with code. You can click
+      any of the animations, and it will take you to their respective <strong
+        >CodePen</strong
+      > page.
+    </section>
+  </article>
+</MainLayout>
