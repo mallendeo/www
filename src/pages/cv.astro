@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/DocumentLayout.astro";
+import { FiMail, FiFile, FiHome, FiGlobe, FiMapPin } from "solid-icons/fi";
 ---
 
 <MainLayout title="Mauricio Allende - Front-end Engineer - CV">
@@ -10,19 +11,37 @@ import MainLayout from "../layouts/DocumentLayout.astro";
     </a>
   </header>
 
-  <div class="flex flex-col sm:flex-row justify-between sm:items-center">
+  <div
+    class="flex flex-col print:flex-row sm:flex-row justify-between sm:items-center"
+  >
     <div class="flex flex-col">
       <h1 class="mb-2 mt-3">Mauricio Allende</h1>
       <span> Front-end Engineer | UX/UI Designer</span>
     </div>
 
-    <div class="flex flex-col mt-5">
-      <span>Santiago, Chile</span>
-      <a class="mt-2" href="mailto:hi@mallendeo.com">hi@mallendeo.com</a>
+    <div class="flex flex-col gap-2 mt-5">
+      <span class="flex items-center gap-2">
+        <FiMapPin />
+        Santiago, Chile
+      </span>
+      <a
+        class="flex items-center gap-2 print:decoration-none"
+        href="mailto:hi@mallendeo.com"
+      >
+        <FiMail />
+        hi@mallendeo.com
+      </a>
+      <a
+        class="hidden print:flex print:decoration-none gap-2 items-center"
+        href="https://www.mallendeo.com"
+      >
+        <FiGlobe />
+        mallendeo.com
+      </a>
     </div>
   </div>
 
-  <h2>Work Experience</h2>
+  <h2 class="mt-9">Work Experience</h2>
 
   <h3>Web UI Developer - Globant - 2019 - 2020</h3>
 
@@ -130,7 +149,6 @@ import MainLayout from "../layouts/DocumentLayout.astro";
     <li>React Native / Expo</li>
     <li>TypeScript</li>
     <li>Node</li>
-    <li>CSS</li>
     <li>Web Animation</li>
   </ul>
 
