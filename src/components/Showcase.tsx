@@ -130,7 +130,7 @@ const Showcase: Component<{ class?: string }> = (props) => (
 				'max-w-sm mx-auto mt-4',
 				'group hover:(bg-black text-white)',
 			)}
-			href='https://dribbble.com/mallendeo'
+			href='https://codepen.io/mallendeo'
 			target='__blank'
 			rel='noopener'
 		>
