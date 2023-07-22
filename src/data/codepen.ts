@@ -48,7 +48,7 @@ export const codepenItems: CodepenItem[] = [
 	},
 	{
 		slug: 'gamecube-intro',
-		slugCdp: 'xORqVp',
+		slugCdp: 'mdOZbV',
 		title: 'Gamecube (Pure CSS)',
 		video: 'gamecube.mp4',
 		year: 2014,
