@@ -2,74 +2,68 @@
 import Showcase from "../components/Showcase";
 import MainLayout from "../layouts/MainLayout.astro";
 import {
-    BiLogosTwitter,
-    BiLogosCodepen,
-    BiLogosGithub,
-    BiLogosDribbble,
+  BiLogosTwitter,
+  BiLogosCodepen,
+  BiLogosGithub,
+  BiLogosDribbble,
 } from "solid-icons/bi";
 ---
 
 <MainLayout title="Mauricio Allende - Front-end Engineer">
-    <header class="flex flex-col md:flex-col gap-8 my-16">
-        <div class="flex flex-col flex-1 items-center text-center gap-2">
-            <h1 class="font-bold text-4xl">Mauricio Allende</h1>
-            <h2 class="text-xl">Front-End Engineer - UX/UI Designer</h2>
+  <header class="flex flex-col md:flex-col gap-8 my-16">
+    <div class="flex flex-col flex-1 items-center text-center gap-2">
+      <h1 class="font-bold text-4xl">Mauricio Allende</h1>
+      <h2 class="text-xl">Front-End Engineer - UX/UI Designer</h2>
 
-            <div class="flex gap-8 mt-4">
-                <a
-                    target="__blank"
-                    rel="noopener noreferrer"
-                    href="https://twitter.com/mallendeo"
-                    class="transition-all hover:scale-110 w-8 h-8 grid place-content-center hover:bg-blue-50 rounded-lg"
-                >
-                    <BiLogosTwitter
-                        class="text-blue"
-                        fill="currentColor"
-                        size={24}
-                    />
-                </a>
+      <div class="flex gap-8 mt-4">
+        <a
+          target="__blank"
+          rel="noopener noreferrer"
+          href="https://x.com/mallendeo"
+          class="transition-all hover:scale-110 w-8 h-8 grid place-content-center hover:bg-gray-50 rounded-lg"
+        >
+          <svg
+            class="w-4"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 300 300.25"
+          >
+            <path
+              class="text-black"
+              fill="currentColor"
+              d="M178.57 127.15 290.27 0h-26.46l-97.03 110.38L89.34 0H0l117.13 166.93L0 300.25h26.46l102.4-116.59 81.8 116.59H300M36.01 19.54h40.65l187.13 262.13h-40.66"
+            ></path>
+          </svg>
+        </a>
 
-                <a
-                    target="__blank"
-                    rel="noopener noreferrer"
-                    href="https://codepen.io/mallendeo"
-                    class="transition-all hover:scale-110 w-8 h-8 grid place-content-center hover:bg-gray-50 rounded-lg"
-                >
-                    <BiLogosCodepen
-                        class="text-black"
-                        fill="currentColor"
-                        size={24}
-                    />
-                </a>
+        <a
+          target="__blank"
+          rel="noopener noreferrer"
+          href="https://codepen.io/mallendeo"
+          class="transition-all hover:scale-110 w-8 h-8 grid place-content-center hover:bg-gray-50 rounded-lg"
+        >
+          <BiLogosCodepen class="text-black" fill="currentColor" size={24} />
+        </a>
 
-                <a
-                    target="__blank"
-                    rel="noopener noreferrer"
-                    href="https://dribbble.com/mallendeo"
-                    class="transition-all hover:scale-110 w-8 h-8 grid place-content-center hover:bg-rose-50 rounded-lg"
-                >
-                    <BiLogosDribbble
-                        class="text-rose"
-                        fill="currentColor"
-                        size={24}
-                    />
-                </a>
+        <a
+          target="__blank"
+          rel="noopener noreferrer"
+          href="https://dribbble.com/mallendeo"
+          class="transition-all hover:scale-110 w-8 h-8 grid place-content-center hover:bg-rose-50 rounded-lg"
+        >
+          <BiLogosDribbble class="text-rose" fill="currentColor" size={24} />
+        </a>
 
-                <a
-                    target="__blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/mallendeo"
-                    class="transition-all hover:scale-110 w-8 h-8 grid place-content-center hover:bg-gray-50 rounded-lg"
-                >
-                    <BiLogosGithub
-                        class="text-gray-7"
-                        fill="currentColor"
-                        size={24}
-                    />
-                </a>
-            </div>
-        </div>
-    </header>
+        <a
+          target="__blank"
+          rel="noopener noreferrer"
+          href="https://github.com/mallendeo"
+          class="transition-all hover:scale-110 w-8 h-8 grid place-content-center hover:bg-gray-50 rounded-lg"
+        >
+          <BiLogosGithub class="text-gray-7" fill="currentColor" size={24} />
+        </a>
+      </div>
+    </div>
+  </header>
 
-    <Showcase client:load />
+  <Showcase client:load />
 </MainLayout>
